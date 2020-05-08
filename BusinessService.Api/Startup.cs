@@ -15,6 +15,7 @@ using BusinessService.Data;
 using Microsoft.EntityFrameworkCore;
 using BusinessService.Domain.Repositories;
 using BusinessService.Data.Repositories;
+using BusinessService.Domain;
 
 namespace BusinessService.Api
 {
@@ -36,8 +37,9 @@ namespace BusinessService.Api
             services.AddDbContextPool<BusinessServiceDbContext>(
                 options => options.UseSqlServer(Configuration.GetConnectionString("SchoolDbConnection")));
 
-            //Register the IStudent Repository
-            services.AddScoped<IStudentRepository,StudentRepository>();
+            //Register the Unit of work and Generic Repository
+            services.AddScoped(typeof(IUnitofWork ), typeof(UnitOfWork));
+            services.AddScoped(typeof(IRepository<>), typeof(GenericRepository<>));
             services.AddMvcCore();
             services.AddMvc();
 

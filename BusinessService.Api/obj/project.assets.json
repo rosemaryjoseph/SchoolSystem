@@ -2979,6 +2979,20 @@
         "runtime": {
           "bin/placeholder/BusinessService.Domain.dll": {}
         }
+      },
+      "BusinessService.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "BusinessService.Data": "1.0.0",
+          "BusinessService.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BusinessService.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BusinessService.Services.dll": {}
+        }
       }
     }
   },
@@ -9160,12 +9174,18 @@
       "type": "project",
       "path": "../BusinessService.Domain/BusinessService.Domain.csproj",
       "msbuildProject": "../BusinessService.Domain/BusinessService.Domain.csproj"
+    },
+    "BusinessService.Services/1.0.0": {
+      "type": "project",
+      "path": "../BusinessService.Services/BusinessService.Services.csproj",
+      "msbuildProject": "../BusinessService.Services/BusinessService.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "BusinessService.Data >= 1.0.0",
       "BusinessService.Domain >= 1.0.0",
+      "BusinessService.Services >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 3.1.3",
       "Microsoft.EntityFrameworkCore.Sqlite >= 3.1.2",
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.2",
@@ -9208,6 +9228,9 @@
             },
             "C:\\Users\\cognizantdotnet31\\source\\repos\\SchoolSystem\\BusinessService\\BusinessService.Domain\\BusinessService.Domain.csproj": {
               "projectPath": "C:\\Users\\cognizantdotnet31\\source\\repos\\SchoolSystem\\BusinessService\\BusinessService.Domain\\BusinessService.Domain.csproj"
+            },
+            "C:\\Users\\cognizantdotnet31\\source\\repos\\SchoolSystem\\BusinessService\\BusinessService.Services\\BusinessService.Services.csproj": {
+              "projectPath": "C:\\Users\\cognizantdotnet31\\source\\repos\\SchoolSystem\\BusinessService\\BusinessService.Services\\BusinessService.Services.csproj"
             }
           }
         }

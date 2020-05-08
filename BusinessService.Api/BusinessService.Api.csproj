@@ -35,6 +35,7 @@
   <ItemGroup>
     <ProjectReference Include="..\BusinessService.Data\BusinessService.Data.csproj" />
     <ProjectReference Include="..\BusinessService.Domain\BusinessService.Domain.csproj" />
+    <ProjectReference Include="..\BusinessService.Services\BusinessService.Services.csproj" />
   </ItemGroup>
 
 

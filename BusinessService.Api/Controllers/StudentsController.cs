@@ -6,6 +6,7 @@ using BusinessService.Data;
 using BusinessService.Domain;
 using BusinessService.Domain.Repositories;
 using System.Collections.Generic;
+using BusinessService.Domain.Services;
 
 namespace BusinessService.Api.Controllers
 {
@@ -13,45 +14,50 @@ namespace BusinessService.Api.Controllers
     [ApiController]
     public class StudentsController : Controller
     {
-        private readonly IStudentRepository _studentRepository;
 
-        public StudentsController(IStudentRepository studentRepository)
+        private readonly UnitOfWork _uow;
+        public StudentsController(IUnitofWork uow)
         {
-            _studentRepository = studentRepository;
+            this._uow = uow as UnitOfWork;
         }
 
         // GET: api/Student
         [HttpGet]
         public ActionResult<IEnumerable<Student>> GetStudent()
         {
-            return _studentRepository.GetAllStudents().ToList();
+            return this._uow.StudentService.GetFirstFiveStudents().ToList();
         }
 
         [HttpGet("{id}")]
         public ActionResult<Student> GetStudent(int id)
         {
-            return _studentRepository.GetByStudentId(id);
+            return this._uow.StudentService.GetById(id);
         }
 
         [HttpPut("{id}")]
-        public IActionResult PutSchool(int id, Student student)
+        public ActionResult<IEnumerable<Student>> PutSchool(int id, Student student)
         {
-             return (IActionResult)_studentRepository.UpdateStudent(id,student);            
+            this._uow.StudentService.Update(student);
+            return  this._uow.StudentService.GetAll().ToList();
         }
 
         // POST: api/Student
         [HttpPost]
         public ActionResult<Student> AddStudent(Student student)
         {
-            _studentRepository.AddStudent(student);
-             return _studentRepository.GetByStudentId(_studentRepository.GetAllStudents().Max(r => r.StudentID));
+            this._uow.StudentService.Add(student);
+            this._uow.Commit();
+            return this._uow.StudentService.GetById(this._uow.StudentService.GetAll().Max(r => r.StudentID));
         }
-    
+
         // DELETE: api/School/5
         [HttpDelete("{id}")]
-        public ActionResult<Student> DeleteStudent(int id)
+        public void DeleteStudent(int id)
         {
-            return _studentRepository.DeleteStudent(id);
+            var student= this._uow.StudentService.GetById(id);
+            this._uow.StudentService.Delete(student);
+            this._uow.Commit();
+          
         }
     }
 }
