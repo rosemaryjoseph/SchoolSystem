@@ -7,17 +7,17 @@ namespace BusinessService.Data.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Grades",
+                name: "Standards",
                 columns: table => new
                 {
-                    GradeId = table.Column<int>(nullable: false)
+                    StandardId = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    GradeName = table.Column<string>(nullable: true),
+                    StandardName = table.Column<string>(nullable: true),
                     Division = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Grades", x => x.GradeId);
+                    table.PrimaryKey("PK_Standards", x => x.StandardId);
                 });
 
             migrationBuilder.CreateTable(
@@ -40,7 +40,7 @@ namespace BusinessService.Data.Migrations
                     StudentID = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     SchoolID = table.Column<int>(nullable: false),
-                    GradeId = table.Column<int>(nullable: false),
+                    StandardId = table.Column<int>(nullable: false),
                     LastName = table.Column<string>(nullable: true),
                     FirstMidName = table.Column<string>(nullable: true)
                 },
@@ -48,10 +48,10 @@ namespace BusinessService.Data.Migrations
                 {
                     table.PrimaryKey("PK_Students", x => x.StudentID);
                     table.ForeignKey(
-                        name: "FK_Students_Grades_GradeId",
-                        column: x => x.GradeId,
-                        principalTable: "Grades",
-                        principalColumn: "GradeId",
+                        name: "FK_Students_Standards_StandardId",
+                        column: x => x.StandardId,
+                        principalTable: "Standards",
+                        principalColumn: "StandardId",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_Students_Schools_SchoolID",
@@ -62,9 +62,9 @@ namespace BusinessService.Data.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Students_GradeId",
+                name: "IX_Students_StandardId",
                 table: "Students",
-                column: "GradeId");
+                column: "StandardId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Students_SchoolID",
@@ -78,7 +78,7 @@ namespace BusinessService.Data.Migrations
                 name: "Students");
 
             migrationBuilder.DropTable(
-                name: "Grades");
+                name: "Standards");
 
             migrationBuilder.DropTable(
                 name: "Schools");

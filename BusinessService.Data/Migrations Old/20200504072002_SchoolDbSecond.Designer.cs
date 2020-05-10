@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BusinessService.Data.Migrations
 {
     [DbContext(typeof(BusinessServiceDbContext))]
-    [Migration("20200510133816_Final")]
-    partial class Final
+    [Migration("20200504072002_SchoolDbSecond")]
+    partial class SchoolDbSecond
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -20,22 +20,7 @@ namespace BusinessService.Data.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("BusinessService.Domain.School", b =>
-                {
-                    b.Property<int>("SchoolID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("SchoolName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("SchoolID");
-
-                    b.ToTable("Schools");
-                });
-
-            modelBuilder.Entity("BusinessService.Domain.Standard", b =>
+            modelBuilder.Entity("BusinessService.Data.Standard", b =>
                 {
                     b.Property<int>("StandardId")
                         .ValueGeneratedOnAdd()
@@ -53,7 +38,22 @@ namespace BusinessService.Data.Migrations
                     b.ToTable("Standards");
                 });
 
-            modelBuilder.Entity("BusinessService.Domain.Student", b =>
+            modelBuilder.Entity("BusinessService.Data.School", b =>
+                {
+                    b.Property<int>("SchoolID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("SchoolName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("SchoolID");
+
+                    b.ToTable("Schools");
+                });
+
+            modelBuilder.Entity("BusinessService.Data.Student", b =>
                 {
                     b.Property<int>("StudentID")
                         .ValueGeneratedOnAdd()
@@ -63,35 +63,35 @@ namespace BusinessService.Data.Migrations
                     b.Property<string>("FirstMidName")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("StandardId")
+                        .HasColumnType("int");
+
                     b.Property<string>("LastName")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("SchoolID")
                         .HasColumnType("int");
 
-                    b.Property<int>("StandardId")
-                        .HasColumnType("int");
-
                     b.HasKey("StudentID");
 
-                    b.HasIndex("SchoolID");
-
                     b.HasIndex("StandardId");
+
+                    b.HasIndex("SchoolID");
 
                     b.ToTable("Students");
                 });
 
-            modelBuilder.Entity("BusinessService.Domain.Student", b =>
+            modelBuilder.Entity("BusinessService.Data.Student", b =>
                 {
-                    b.HasOne("BusinessService.Domain.School", "School")
-                        .WithMany()
-                        .HasForeignKey("SchoolID")
+                    b.HasOne("BusinessService.Data.Standard", "Standard")
+                        .WithMany("Students")
+                        .HasForeignKey("StandardId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("BusinessService.Domain.Standard", "Standard")
-                        .WithMany("Students")
-                        .HasForeignKey("StandardId")
+                    b.HasOne("BusinessService.Data.School", "School")
+                        .WithMany()
+                        .HasForeignKey("SchoolID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

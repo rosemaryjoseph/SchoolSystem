@@ -13,9 +13,4 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <Value>Data Source=tcp:sqldbserverdotnet31.database.windows.net,1433%3bInitial Catalog=SchoolDb%3bUser Id=sqladmin%40sqldbserverdotnet31%3bPassword=elvin%40143</Value>
     </DestinationConnectionStrings>
   </ItemGroup>
-  <ItemGroup>
-    <EFMigrations Include="BusinessService.Data.BusinessServiceDbContext">
-      <Value>Data Source=tcp:sqldbserverdotnet31.database.windows.net,1433%3bInitial Catalog=SchoolDb%3bUser Id=sqladmin%40sqldbserverdotnet31%3bPassword=elvin%40143</Value>
-    </EFMigrations>
-  </ItemGroup>
 </Project>

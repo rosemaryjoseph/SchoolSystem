@@ -20,9 +20,9 @@ namespace BusinessService.Data.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("BusinessService.Data.Grade", b =>
+            modelBuilder.Entity("BusinessService.Data.Standard", b =>
                 {
-                    b.Property<int>("GradeId")
+                    b.Property<int>("StandardId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
@@ -30,12 +30,12 @@ namespace BusinessService.Data.Migrations
                     b.Property<string>("Division")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("GradeName")
+                    b.Property<string>("StandardName")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("GradeId");
+                    b.HasKey("StandardId");
 
-                    b.ToTable("Grades");
+                    b.ToTable("Standards");
                 });
 
             modelBuilder.Entity("BusinessService.Data.School", b =>
@@ -63,7 +63,7 @@ namespace BusinessService.Data.Migrations
                     b.Property<string>("FirstMidName")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("GradeId")
+                    b.Property<int>("StandardId")
                         .HasColumnType("int");
 
                     b.Property<string>("LastName")
@@ -74,7 +74,7 @@ namespace BusinessService.Data.Migrations
 
                     b.HasKey("StudentID");
 
-                    b.HasIndex("GradeId");
+                    b.HasIndex("StandardId");
 
                     b.HasIndex("SchoolID");
 
@@ -83,9 +83,9 @@ namespace BusinessService.Data.Migrations
 
             modelBuilder.Entity("BusinessService.Data.Student", b =>
                 {
-                    b.HasOne("BusinessService.Data.Grade", "Grade")
+                    b.HasOne("BusinessService.Data.Standard", "Standard")
                         .WithMany("Students")
-                        .HasForeignKey("GradeId")
+                        .HasForeignKey("StandardId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
