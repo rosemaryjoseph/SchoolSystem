@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-using Microsoft.EntityFrameworkCore;
-using System.Configuration;
+﻿using Microsoft.EntityFrameworkCore;
 using BusinessService.Domain;
 
 namespace BusinessService.Data
@@ -12,16 +10,6 @@ namespace BusinessService.Data
         {
          
         }
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            base.OnConfiguring(optionsBuilder);
-        }
-
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            base.OnModelCreating(modelBuilder);
-        }
-
         public virtual DbSet<School> Schools { get; set; }        
         public virtual DbSet<Standard> Standards { get; set; }
         public virtual DbSet<Student> Students { get; set; }

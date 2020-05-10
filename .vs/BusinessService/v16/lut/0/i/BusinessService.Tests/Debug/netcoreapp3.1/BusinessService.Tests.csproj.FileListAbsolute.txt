@@ -1,0 +1,2 @@
+C:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\.vs\BusinessService\v16\lut\0\i\BusinessService.Tests\Debug\netcoreapp3.1\BusinessService.Tests.AssemblyInfoInputs.cache
+C:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\.vs\BusinessService\v16\lut\0\i\BusinessService.Tests\Debug\netcoreapp3.1\BusinessService.Tests.AssemblyInfo.cs

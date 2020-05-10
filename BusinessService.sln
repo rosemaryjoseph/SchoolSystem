@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessService.Api", "Busi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessService.Domain", "BusinessService.Domain\BusinessService.Domain.csproj", "{D8C10450-BCF2-476A-94F2-C6223432AA5C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessService.Services", "BusinessService.Services\BusinessService.Services.csproj", "{5FDC7BF1-26B3-4CF0-B8C3-7C9CA4EE0BD6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessService.Services", "BusinessService.Services\BusinessService.Services.csproj", "{5FDC7BF1-26B3-4CF0-B8C3-7C9CA4EE0BD6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

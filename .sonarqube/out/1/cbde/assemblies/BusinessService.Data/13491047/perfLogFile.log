@@ -1,0 +1,9 @@
+File name	Line	Function	Duration[ms]	Explored nodes
+C:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessService.Data\Migrations\20200504070704_SchoolDb.cs	74	_BusinessService.Data.Migrations.SchoolDb.Down$Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder$	0	3
+C:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessService.Data\Migrations\20200504072002_SchoolDbSecond.cs	6	_BusinessService.Data.Migrations.SchoolDbSecond.Up$Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder$	0	2
+C:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessService.Data\Migrations\20200504072002_SchoolDbSecond.cs	11	_BusinessService.Data.Migrations.SchoolDbSecond.Down$Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder$	0	2
+C:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessService.Data\Repositories\GenericRepository.cs	17	_BusinessService.Data.Repositories.GenericRepository$T$.Add$T$	0	3
+C:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessService.Data\Repositories\GenericRepository.cs	22	_BusinessService.Data.Repositories.GenericRepository$T$.Delete$T$	0	3
+C:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessService.Data\Repositories\GenericRepository.cs	27	_BusinessService.Data.Repositories.GenericRepository$T$.GetAll$$	0	2
+C:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessService.Data\Repositories\GenericRepository.cs	32	_BusinessService.Data.Repositories.GenericRepository$T$.GetById$int$	0	2
+C:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessService.Data\Repositories\GenericRepository.cs	37	_BusinessService.Data.Repositories.GenericRepository$T$.Update$T$	0	3

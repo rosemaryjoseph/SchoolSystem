@@ -11,6 +11,7 @@ namespace BusinessService.Data.Migrations
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            //Migration method
 
         }
     }

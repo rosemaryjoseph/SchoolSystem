@@ -1,10 +1,7 @@
 ﻿using BusinessService.Domain.Repositories;
 using Microsoft.EntityFrameworkCore;
-using System;
 using System.Collections.Generic;
-using System.Collections.Immutable;
 using System.Linq;
-using System.Text;
 
 namespace BusinessService.Data.Repositories
 {
@@ -44,5 +41,6 @@ namespace BusinessService.Data.Repositories
             this._DbSet.Attach(entity);
             this._DbContext.Entry(entity).State = EntityState.Modified;
         }
+
     }
 }

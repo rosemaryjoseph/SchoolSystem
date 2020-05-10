@@ -1,0 +1,10 @@
+Å
+xC:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessService.Api\Controllers\SchoolController.csutf-8Ñ
+{C:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessService.Api\Controllers\StandardsController.csutf-8É
+zC:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessService.Api\Controllers\StudentsController.csutf-8l
+cC:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessService.Api\Program.csutf-8l
+cC:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessService.Api\Startup.csutf-8o
+fC:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessService.Api\UnitOfWork.csutf-8g
+\C:\Users\cognizantdotnet31\AppData\Local\Temp\.NETCoreApp,Version=v3.1.AssemblyAttributes.csutf-8≥
+ßC:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessService.Api\obj\Debug\netcoreapp3.1\BusinessService.Api.MvcApplicationPartsAssemblyInfo.csutf-8†
+îC:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessService.Api\obj\Debug\netcoreapp3.1\BusinessService.Api.AssemblyInfo.csutf-8

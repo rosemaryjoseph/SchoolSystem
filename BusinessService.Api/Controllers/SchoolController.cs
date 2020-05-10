@@ -1,12 +1,10 @@
-﻿using System;
+﻿using BusinessService.Data;
+using BusinessService.Domain;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using BusinessService.Data;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using  BusinessService.Domain;
 
 namespace BusinessService.Api.Controllers
 {
@@ -14,11 +12,12 @@ namespace BusinessService.Api.Controllers
     [ApiController]
     public class SchoolController : ControllerBase
     {
-        private readonly BusinessServiceDbContext _context;
+        private readonly BusinessServiceDbContext _context;      
 
         public SchoolController(BusinessServiceDbContext context)
         {
-            _context = context;
+            this._context = context;
+          
         }
 
         // GET: api/School
@@ -43,7 +42,7 @@ namespace BusinessService.Api.Controllers
         }
 
         // PUT: api/School/5
-       
+
         [HttpPut("{id}")]
         public async Task<IActionResult> PutSchool(int id, School school)
         {
@@ -74,13 +73,13 @@ namespace BusinessService.Api.Controllers
         }
 
         // POST: api/School
-      
+
         [HttpPost]
         public async Task<ActionResult<School>> PostSchool(School school)
         {
             _context.Schools.Add(school);
             await _context.SaveChangesAsync();
-            return CreatedAtAction("GetSchool", new { id = school.SchoolID },school);
+            return CreatedAtAction("GetSchool", new { id = school.SchoolID }, school);
         }
 
         // DELETE: api/School/5
