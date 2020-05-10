@@ -78,3 +78,53 @@ END;
 
 GO
 
+IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20200510133816_Final')
+BEGIN
+    ALTER TABLE [Students] DROP CONSTRAINT [FK_Students_Standards_StandardId];
+END;
+
+GO
+
+IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20200510133816_Final')
+BEGIN
+    DECLARE @var0 sysname;
+    SELECT @var0 = [d].[name]
+    FROM [sys].[default_constraints] [d]
+    INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+    WHERE ([d].[parent_object_id] = OBJECT_ID(N'[Students]') AND [c].[name] = N'GradeId');
+    IF @var0 IS NOT NULL EXEC(N'ALTER TABLE [Students] DROP CONSTRAINT [' + @var0 + '];');
+    ALTER TABLE [Students] DROP COLUMN [GradeId];
+END;
+
+GO
+
+IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20200510133816_Final')
+BEGIN
+    DROP INDEX [IX_Students_StandardId] ON [Students];
+    DECLARE @var1 sysname;
+    SELECT @var1 = [d].[name]
+    FROM [sys].[default_constraints] [d]
+    INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+    WHERE ([d].[parent_object_id] = OBJECT_ID(N'[Students]') AND [c].[name] = N'StandardId');
+    IF @var1 IS NOT NULL EXEC(N'ALTER TABLE [Students] DROP CONSTRAINT [' + @var1 + '];');
+    ALTER TABLE [Students] ALTER COLUMN [StandardId] int NOT NULL;
+    CREATE INDEX [IX_Students_StandardId] ON [Students] ([StandardId]);
+END;
+
+GO
+
+IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20200510133816_Final')
+BEGIN
+    ALTER TABLE [Students] ADD CONSTRAINT [FK_Students_Standards_StandardId] FOREIGN KEY ([StandardId]) REFERENCES [Standards] ([StandardId]) ON DELETE CASCADE;
+END;
+
+GO
+
+IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20200510133816_Final')
+BEGIN
+    INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+    VALUES (N'20200510133816_Final', N'3.1.3');
+END;
+
+GO
+
