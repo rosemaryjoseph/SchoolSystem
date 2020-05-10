@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAk5nFzju4pUOTMl9Xle4G8gAAAAACAAAAAAADZgAAwAAAABAAAAAsxn5mZYIEfIzv4RQzLo55AAAAAASAAACgAAAAEAAAALHUQRrATmI4PKu9l1B1STuAAAAAbFeZlV8fGgDXZIe2krzknQvZ9VKpz2/mGm11wZsW0d9gidl5EvS2S9MELFhm7fPQKW851O5oF6/OGfVLI+PPgs9OtGM9DtyMQnM6QZbNNJLdWOYHc7PseJsHUW/lENiIGryMRZv+uVDWkE1isaJVcAfnDbnzDW1+/6QZmX4EuJgUAAAAQaghAgFtxm0XRy8MEf5fAm03wlQ=</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="SchoolDbConnection">
+      <Value>Data Source=tcp:sqldbserverdotnet31.database.windows.net,1433%3bInitial Catalog=SchoolDb%3bUser Id=sqladmin%40sqldbserverdotnet31%3bPassword=elvin%40143</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="BusinessService.Data.BusinessServiceDbContext">
+      <Value>Data Source=tcp:sqldbserverdotnet31.database.windows.net,1433%3bInitial Catalog=SchoolDb%3bUser Id=sqladmin%40sqldbserverdotnet31%3bPassword=elvin%40143</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>
