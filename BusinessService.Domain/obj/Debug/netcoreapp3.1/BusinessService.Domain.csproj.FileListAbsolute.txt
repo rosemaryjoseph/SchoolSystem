@@ -6,4 +6,3 @@ C:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessSer
 C:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessService.Domain\obj\Debug\netcoreapp3.1\BusinessService.Domain.AssemblyInfo.cs
 C:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessService.Domain\obj\Debug\netcoreapp3.1\BusinessService.Domain.dll
 C:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessService.Domain\obj\Debug\netcoreapp3.1\BusinessService.Domain.pdb
-C:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessService.Domain\obj\Debug\netcoreapp3.1\BusinessService.Domain.csprojAssemblyReference.cache
