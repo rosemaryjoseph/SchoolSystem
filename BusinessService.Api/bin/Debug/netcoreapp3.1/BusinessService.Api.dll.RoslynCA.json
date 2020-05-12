@@ -12,6 +12,27 @@
       },
       "results": [
         {
+          "ruleId": "S1128",
+          "level": "warning",
+          "message": "Remove this unnecessary 'using'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/cognizantdotnet31/source/repos/SchoolSystem/BusinessService/BusinessService.Api/Controllers/StudentsController.cs",
+                "region": {
+                  "startLine": 6,
+                  "startColumn": 1,
+                  "endLine": 6,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
           "ruleId": "S4823",
           "level": "warning",
           "message": "Make sure that command line arguments are used safely here.",
@@ -41,9 +62,9 @@
               "resultFile": {
                 "uri": "file:///C:/Users/cognizantdotnet31/source/repos/SchoolSystem/BusinessService/BusinessService.Api/Startup.cs",
                 "region": {
-                  "startLine": 62,
+                  "startLine": 63,
                   "startColumn": 17,
-                  "endLine": 62,
+                  "endLine": 63,
                   "endColumn": 48
                 }
               }
@@ -55,6 +76,23 @@
         }
       ],
       "rules": {
+        "S1128": {
+          "id": "S1128",
+          "shortDescription": "Unused \"using\" should be removed",
+          "fullDescription": "Although unnecessary using won't change anything to the produced application, removing them:",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1128",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope",
+              "TestSourceScope"
+            ]
+          }
+        },
         "S4507": {
           "id": "S4507",
           "shortDescription": "Delivering code in production with debug features activated is security-sensitive",

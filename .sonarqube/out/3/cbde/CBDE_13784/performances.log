@@ -1,0 +1,66 @@
+C:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessService.Api\Controllers\SchoolController.cs
+GetSchool 6
+GetSchool -1
+GetSchool 4
+GetSchool -1
+PutSchool 5
+PutSchool -1
+PostSchool 7
+PostSchool -1
+DeleteSchool 7
+DeleteSchool -1
+SchoolExists 4
+SchoolExists -1
+
+C:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessService.Api\Controllers\StandardsController.cs
+GetStandards 4
+GetStandards -1
+GetStandard 3
+GetStandard -1
+PutStandard 5
+PutStandard -1
+PostStandard 3
+PostStandard -1
+DeleteStandard 2
+DeleteStandard -1
+StandardExists 3
+StandardExists -1
+
+C:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessService.Api\Controllers\StudentsController.cs
+GetStudent 14
+GetStudent -1
+GetStudent 37
+GetStudent -1
+PutSchool 4
+PutSchool -1
+AddStudent 4
+AddStudent -1
+DeleteStudent 3
+DeleteStudent -1
+
+C:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessService.Api\Program.cs
+Main 10
+Main -1
+CreateHostBuilder 3
+CreateHostBuilder -1
+
+C:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessService.Api\Startup.cs
+ConfigureServices 3
+ConfigureServices -1
+Configure 3
+Configure -1
+
+C:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessService.Api\UnitOfWork.cs
+Commit 4
+Commit -1
+Dispose 5
+Dispose -1
+Dispose 3
+Dispose -1
+
+C:\Users\cognizantdotnet31\AppData\Local\Temp\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs
+
+C:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessService.Api\obj\Debug\netcoreapp3.1\BusinessService.Api.MvcApplicationPartsAssemblyInfo.cs
+
+C:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessService.Api\obj\Debug\netcoreapp3.1\BusinessService.Api.AssemblyInfo.cs
+

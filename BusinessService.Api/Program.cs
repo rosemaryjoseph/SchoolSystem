@@ -1,5 +1,6 @@
+using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 
 namespace BusinessService.Api
 {
@@ -10,11 +11,17 @@ namespace BusinessService.Api
             CreateHostBuilder(args).Build().Run();
         }
 
-        public static IHostBuilder CreateHostBuilder(string[] args) =>
-            Host.CreateDefaultBuilder(args)  
-                .ConfigureWebHostDefaults(webBuilder =>
-                {
-                    webBuilder.UseStartup<Startup>();
-                });
+        public static IWebHostBuilder CreateHostBuilder(string[] args) =>
+            WebHost.CreateDefaultBuilder(args)                
+                   .UseStartup<Startup>()
+                   .ConfigureLogging(builder =>
+                    {
+                        builder.AddApplicationInsights("4ffb0a26-77bb-4e28-8d75-6ae40906c126");           
+                        builder.AddFilter<Microsoft.Extensions.Logging.ApplicationInsights.ApplicationInsightsLoggerProvider>
+                                     ("", LogLevel.Information);
+                        builder.AddFilter<Microsoft.Extensions.Logging.ApplicationInsights.ApplicationInsightsLoggerProvider>
+                         (typeof(Startup).FullName, LogLevel.Trace);
+                    });
+                
     }
 }

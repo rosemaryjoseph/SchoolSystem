@@ -9,28 +9,28 @@ uC:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessSe
 
 ' 0
 
-& .Ù
-C:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessService.Data\Migrations\20200504070704_SchoolDb.cs
+& .Þ
+ƒC:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessService.Data\Migrations Old\20200504070704_SchoolDb.cs
 
  !
 
   "<
 4 D		  $$ @@ EE (
-  #  % $
+ ! &# ( $
  " 
-2 37 8
+5 6: ;
   $! &
  "!! 
 !!3 4!!8 9<
-&& ((  %** $++ #,, $--# ((
+&& ((  %** $++! &,, $--# ((
 // "11 22 88 
 114 5119 :
 44  !44% &
 ::  !::% &
 
 KK  $(
-KK6 FMM PP SS Ä
-…C:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessService.Data\Migrations\20200504072002_SchoolDbSecond.cs
+KK6 FMM PP SS È
+‰C:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessService.Data\Migrations Old\20200504072002_SchoolDbSecond.cs
 
  '
 
@@ -40,15 +40,15 @@ uC:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessSe
 
   $
 
-6 Fµ
+6 F¡
 {C:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessService.Data\Repositories\GenericRepository.cs
 
  "d
-# $4 5= >  . /   !! && 2
+# $4 5= >  . /   !! && (
 
 
-2 <  )(( ** F
-" (    ## )) 
+2 <  ))) F
+" (    ## (( 
 
   
 : A %
@@ -64,5 +64,5 @@ uC:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessSe
 !! 
 !! ##$ &
 
-&& (
-&& #((" ()) %**" (
+&& 
+&& #(( %))" (

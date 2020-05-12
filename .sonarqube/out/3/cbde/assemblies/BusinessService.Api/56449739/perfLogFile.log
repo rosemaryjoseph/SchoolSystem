@@ -1,0 +1,6 @@
+File name	Line	Function	Duration[ms]	Explored nodes
+C:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessService.Api\Program.cs	7	_BusinessService.Api.Program.Main$string$$$	0	3
+C:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessService.Api\Controllers\StudentsController.cs	24	_BusinessService.Api.Controllers.StudentsController.GetStudent$$	0	2
+C:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessService.Api\Controllers\StudentsController.cs	31	_BusinessService.Api.Controllers.StudentsController.GetStudent$int$	0	5
+C:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessService.Api\UnitOfWork.cs	18	_BusinessService.Api.UnitOfWork.Commit$$	0	3
+C:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessService.Api\UnitOfWork.cs	34	_BusinessService.Api.UnitOfWork.Dispose$$	0	3
