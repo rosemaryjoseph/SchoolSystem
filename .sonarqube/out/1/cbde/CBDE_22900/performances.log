@@ -1,0 +1,42 @@
+C:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessService.Data\BusinessServiceDbContext.cs
+
+C:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessService.Data\Migrations Old\20200504070704_SchoolDb.cs
+Up 101
+Up -1
+Down 62
+Down -1
+
+C:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessService.Data\Migrations Old\20200504070704_SchoolDb.Designer.cs
+BuildTargetModel 6
+BuildTargetModel -1
+
+C:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessService.Data\Migrations Old\20200504072002_SchoolDbSecond.cs
+Up 6
+Up -1
+Down 5
+Down -1
+
+C:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessService.Data\Migrations Old\20200504072002_SchoolDbSecond.Designer.cs
+BuildTargetModel 8
+BuildTargetModel -1
+
+C:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessService.Data\Migrations Old\BusinessServiceDbContextModelSnapshot.cs
+BuildModel 6
+BuildModel -1
+
+C:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessService.Data\Repositories\GenericRepository.cs
+Add 6
+Add -1
+Delete 5
+Delete -1
+GetAll 17
+GetAll -1
+GetById 8
+GetById -1
+Update 15
+Update -1
+
+C:\Users\cognizantdotnet31\AppData\Local\Temp\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs
+
+C:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessService.Data\obj\Debug\netcoreapp3.1\BusinessService.Data.AssemblyInfo.cs
+

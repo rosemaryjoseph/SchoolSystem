@@ -37,9 +37,8 @@ namespace BusinessService.Data.Repositories
 
         public void Update(T entity)
         {
-            this._DbContext.Entry(entity).State = EntityState.Detached;
             this._DbSet.Attach(entity);
-            this._DbContext.Entry(entity).State = EntityState.Modified;
+            this._DbContext.Entry(entity).State = EntityState.Modified;            
         }
 
     }

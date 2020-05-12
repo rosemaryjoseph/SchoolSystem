@@ -51,7 +51,8 @@ namespace BusinessService.Api
                     Description = "My First ASP.NET Core 2.0 Web API"                  
                 });
             });
-           
+            // The following line enables Application Insights telemetry collection.
+            services.AddApplicationInsightsTelemetry();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

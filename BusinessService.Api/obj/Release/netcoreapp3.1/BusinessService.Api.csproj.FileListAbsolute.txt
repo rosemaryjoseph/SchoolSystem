@@ -157,3 +157,16 @@ C:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessSer
 C:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessService.Api\obj\Release\netcoreapp3.1\BusinessService.Api.dll
 C:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessService.Api\obj\Release\netcoreapp3.1\BusinessService.Api.pdb
 C:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessService.Api\obj\Release\netcoreapp3.1\BusinessService.Api.genruntimeconfig.cache
+C:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessService.Api\bin\Release\netcoreapp3.1\Connected Services\Application Insights\ConnectedService.json
+C:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessService.Api\bin\Release\netcoreapp3.1\Microsoft.ApplicationInsights.dll
+C:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessService.Api\bin\Release\netcoreapp3.1\Microsoft.ApplicationInsights.AspNetCore.dll
+C:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessService.Api\bin\Release\netcoreapp3.1\Microsoft.AI.DependencyCollector.dll
+C:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessService.Api\bin\Release\netcoreapp3.1\Microsoft.AI.EventCounterCollector.dll
+C:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessService.Api\bin\Release\netcoreapp3.1\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessService.Api\bin\Release\netcoreapp3.1\Microsoft.AI.WindowsServer.dll
+C:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessService.Api\bin\Release\netcoreapp3.1\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessService.Api\bin\Release\netcoreapp3.1\Microsoft.Extensions.DiagnosticAdapter.dll
+C:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessService.Api\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.ApplicationInsights.dll
+C:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessService.Api\bin\Release\netcoreapp3.1\Microsoft.Extensions.PlatformAbstractions.dll
+C:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessService.Api\bin\Release\netcoreapp3.1\System.Diagnostics.PerformanceCounter.dll
+C:\Users\cognizantdotnet31\source\repos\SchoolSystem\BusinessService\BusinessService.Api\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.PerformanceCounter.dll
